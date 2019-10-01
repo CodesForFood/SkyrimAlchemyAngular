@@ -1,0 +1,44 @@
+<div class="container">
+   <div class="row ustify-content-between"> 
+      <div class="md-col-2">
+         <ul class="ingredients">
+            <li *ngFor="let ing of ingList"
+               (click)="onSelect(ing)"
+               [class.selected]="ing === selectedIng">   
+               <span class="badge">{{ing.Id}}</span> {{ing.Name}}
+            </li>
+         </ul>
+      </div>
+      <div class="md-col-3">
+         <div *ngIf="selectedIng">
+            <table class="table table-dark position-fixed">
+               <thead>
+                  <tr>                     
+                     <th scope="col">{{selectedIng.Name}}</th>                    
+                  </tr>                  
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row">Effect 1 - {{selectedIng.Effect1}}</th>                                    
+                  </tr>
+                  <tr>
+                     <th scope="row">Effect 2 - {{selectedIng.Effect2}}</th>                                       
+                  </tr>
+                  <tr>
+                     <th scope="row">Effect 3 - {{selectedIng.Effect3}}</th>                                         
+                  </tr>
+                  <tr>
+                     <th scope="row">Effect 4 - {{selectedIng.Effect4}}</th>                                        
+                  </tr>
+                  <tr>
+                     <th scope="row">Weight - {{selectedIng.Weight}}</th>                     
+                  </tr>                     
+                  <tr>
+                     <th scope="row">Value - {{selectedIng.Value}} Coin(s)</th>                 
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>        
+   </div>
+</div>

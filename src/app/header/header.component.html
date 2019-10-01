@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light bg-light ">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" name="searchString" (input)="onInput(searchString)" [(ngModel)]="searchString" placeholder="Search" aria-label="Search" >
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="nameRadioId" name="options" value="Name" class="custom-control-input" [(ngModel)]="searchType" (click)="setSearchType('Name')">
+        <label class="custom-control-label" for="nameRadioId">Search By Name</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="ingredientRadioId" name="options" value="Ingredient" [(ngModel)]="searchType" class="custom-control-input" (click)="setSearchType('Ingredient')">
+        <label class="custom-control-label" for="ingredientRadioId">Search By Ingredient</label>
+      </div>
+    </form>
+</nav>

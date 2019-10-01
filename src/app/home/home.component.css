@@ -1,0 +1,49 @@
+/* Stolen from angular.io, due to their MIT license */
+.ingredients {
+    margin: 0 0 5em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 20em;
+}
+
+.ingredients li {
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    left: 0;
+    background-color: rgb(89, 137, 241);
+    margin: .5em;
+    height: 1.8em;
+    border-radius: 4px;
+}
+
+.ingredients li:hover {
+    color: black;
+    background-color:rgb(240, 71, 71);
+    left: .1em;
+}
+
+.ingredients li.selected {
+    background-color: rgb(18, 4, 141);
+    color: white;
+}
+
+.ingredients li.selected:hover {
+    background-color: rgb(126, 24, 6);
+    color: white;
+}
+
+.ingredients .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.5em 0.7em 0.8em 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+  
