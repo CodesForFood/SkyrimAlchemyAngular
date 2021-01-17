@@ -1,7 +1,5 @@
 # SkyrimAlchemy
 
-View the <a href="http://eman-websites.s3-website.us-east-2.amazonaws.com" target="_blank">website</a>
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
 ## Development server
